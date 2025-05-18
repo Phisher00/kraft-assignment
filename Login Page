@@ -1,0 +1,75 @@
+<!---LOgin PAge--->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #222;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .login-box {
+            background: #333;
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .login-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+            background: #444;
+            color: #fff;
+        }
+        
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #e50914;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<!-- i have create 2 html pages and it will nav to next page by usinng formaction-->
+
+<body>
+    <form action="kraft2.html" method="get">
+        <div class="login-box">
+            <label for="username"> username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required />
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            <button type="submit">Sign In</button>
+            <p><a href="#">Forgot password</a></p>
+            <p><a href="#">Sign up</a></p>
+
+        </div>
+    </form>
+</body>
+
+</html>
